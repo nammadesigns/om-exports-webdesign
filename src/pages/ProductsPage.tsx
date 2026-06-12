@@ -6,7 +6,7 @@ const products = [
     name: 'Dry Red Chilli',
     category: 'Spices',
     grade: 'Grade A',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAKeK9FwB976il1wOp1kJlimVlARtYHLvANUH4Zx5lGzKLNarnXDkAyTVDzNHNV4qbWfOlZxHa_s409mogFPb8vrIk9muKFV7GXoS8h7Xcj6YliXf1sQkfCvPn5Yk4k1oZ20havn0wqoUBtqiHBxFc6DvT68pmaXByKWuvr5Y92tB8AXtAR2YEBp3qPlp2i1Tfl2-Ika2YIH3kKmPrD59o6T0BSm_lignvxdX6RyTGEo_qf5GwzfDV97sajrXUuR0H0iRMAIHkDS1Q',
+    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.46 PM.jpeg',
     description: 'Available in Guntur & Byadgi types. Hand-picked and sun-dried to perfection.',
     specs: [
       { label: 'Moisture', value: 'Max 12%' },
@@ -18,7 +18,7 @@ const products = [
     name: 'Fresh Onion',
     category: 'Vegetables',
     grade: null,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC5r5ecAnmiaO9u31Tgonj-LMiPLqqtB9fES7jNWsUpCGwaCeDE8bJjIwcv1gKcuZmrY9JVhgxosMGKKSgYErGb5B6ayBSgUXwzdhC6Bg7hSGUOkxYMSjuRgezTqVYE8Pq2-BEb0YLxsDRiObrdsuVZON3b0DpJtnGpbIwbpdmaFbKjXZH5WP8deS4JpZ1_vutByHGFiYlv5WDKvcT1mNYRw2tlnhgVwwOCATI9S_xf2o5tCnNbOUcESa3jIORml0moCpyIYEDvD-0',
+    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.06 PM.jpeg',
     description: 'Premium Nasik Red variety. Optimized for long-distance transit and shelf life.',
     specs: [
       { label: 'Size', value: '45mm - 60mm+' },
@@ -30,7 +30,7 @@ const products = [
     name: 'Ground Nuts',
     category: 'Oilseeds',
     grade: null,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCnRyJbKAE3murzk8RVILfX6aHzvv7_o1Hcoy82qR8b6YJrVQ_6Kf0dN_5BAlaXmgnp6A_MrP2XjCztGnIHgBeaaTfdGNiU5UKlY1mOFMk_kAKUvy9TBGV84c7-oHB795qS6iRXIp4BnaW8KDiMR6w0OCixCR7aPY5IBJuAJu93pmMJAbFIxEdHUxeuU_WiI7yIYHfY731FOphZ3Gi_wL7vBZgWIyUlP3L2V3Rg3hhUFd9aOM0hNnwzoqGzgpOIOAfmeGmoaAwvtXw',
+    image: '/Images-Videos/Groundnut,_seeds.jpg',
     description: 'HPS Bold and Java varieties. High oil content and consistent size calibration.',
     specs: [
       { label: 'Count/Oz', value: '40/50, 50/60' },
@@ -42,7 +42,7 @@ const products = [
     name: 'Sugar',
     category: 'Grains',
     grade: null,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDwNiEihm1cpG65Kb9JPkXfKvBWaBDwckXQSQHb29K3NDJgH1fodnlxh8o-ELhNshmnYfq3JAiEW5MbIy9Hwei9tOTSRqIfeRqmfIVUMENkxzLiz58_7rnea6b7oFxfuekZiL1sCit_1Kaz2O_VaJwt1CCzuagYXWNPa73BWiCtYAsKvXNNy5H20cVcrVOPBbgsjUopFkiWGY1PeK9sQh1HgBaH_xqYqUAMd7lWgLwQQ1RlSJrF8xo8bkwBGL2YbMtzBcEZzabBxr0',
+    image: '/Images-Videos/sugar.png',
     description: 'Indian Cane Sugar S30/M30. International standard ICUMSA 45-150.',
     specs: [
       { label: 'ICUMSA', value: 'Under 100' },
@@ -54,7 +54,7 @@ const products = [
     name: 'Yellow Maize',
     category: 'Grains',
     grade: null,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCVnYSA8GX0hE87lX3MsPvNOwe82GZwM3M_VhFhkZScTYvdCO_dvejU3JhmVhBhrmdiAKDtmUmjAFZkqAvmkMplGH4ESgnGa2Klg8-KyBXrd8FWOYnmA5RXXQyPVGL3AjTzhEGZjrD6SOyfbIXc8ul9jC7vUwu6Dg9QhrEtd2MEn_ikL4L-sS7XeXaO8XRVav_Tb8d7TmG25Y666-AAQVuVfQwuKnPVIqcPg2Pk-QNO0GQO_R_87l9lHS2comqFXzfuDd-aFET7dIk',
+    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.08 PM (1).jpeg',
     description: 'High-energy animal feed grade. Mechanically cleaned and low moisture content.',
     specs: [
       { label: 'Moisture', value: 'Max 14%' },
@@ -66,7 +66,7 @@ const products = [
     name: 'Coconut Fiber',
     category: 'Fibers',
     grade: null,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoixV4_rOKwLaQp8Iugqk84kthCpbvzI5a-NY0VkjH3DiIEU5qzhtEoAov18ancl94bAbA5fxENrmUBwYqBsciYBCl1rDRvH4aK7gc24GDNxHFTyALjVSSj6OBfwbUAn5KSlj9GM1lB5RyI1wKFj3pOXPTxECR2WwREO5ADz0Qz8yeYwRds37bP7NRh3m-4l4aHj9Xth8DZxCunTgX5C0LkZc-K2kGPWZ4wGj1EdUzmaMwemxIDLqiYbuu3GI9i3924SS9ktqVTfo',
+    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.25.37 PM.jpeg',
     description: 'Bale-packaged long fiber. Ideal for upholstery and erosion control applications.',
     specs: [
       { label: 'Length', value: '5cm - 15cm' },

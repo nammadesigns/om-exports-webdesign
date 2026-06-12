@@ -66,7 +66,7 @@ export function HomePage() {
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS-6yUMEtF2VWom20ER8YziTAgu8MlS2qSLy3owBDWD4lmHAOB2g-84_t2JmpH__-CwXYJrcz6SXdCVI_O2ryJAxUs1xvgreeGCmj7xLONpN0BAdonSQIGrXR_UJrcVaACcF05PyDvzpnf_YYLwFZHGtVWcznZinhFx9dcAOEGKpha72EcfmPgZsjGdQ3AIL3iLA1hrwo7RT_zadZNtaN3INCRu_OmB9fhWwYBAQx6hKJBU0zMUxK78SKccoOJEst0I31PFQeRMGw"
+            src="/Images-Videos/hero-img.png"
             alt="Cargo container ship on ocean"
           />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -101,7 +101,7 @@ export function HomePage() {
             <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold-accent"></div>
             <img
               className="w-full h-[500px] object-cover rounded shadow-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm_XtlH6ijaSFf-8YcKRKHiCCQn02ng_vI7qJCOgL5DPWmZBIDxQOOnJTPG2m2yhUc693w0I8zSSkGKB1-kqKNLCkMXiEfGYxd7DcnkJnZiLo6DXj9J8SOsRGOtVSZvebGFPxNESBtioCdmuM61J-RemlNQL0I6ooijrOdhb71yFEaLso89yt99MdjygJR1PTNp_GzGk5oAGgQAZikQ-h1MiJwlNChSYyNXniv6vb5_mse_Yx7ysxjBdtue7BG-h9vNyZ34HH9xiM"
+              src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.08 PM (1).jpeg"
               alt="Indian spices arrangement"
             />
           </div>
@@ -154,7 +154,7 @@ export function HomePage() {
             <div className="aspect-square overflow-hidden">
               <img
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMPE29l5yqB-MIAYhw5SbVY35qhmW8QXPuQSMvF-2ckTEhGp3vw0Xeqg-K1zYZT-_ihO-pewQTPt8JHXlfaLew11A_aYHWnhQB_2E6X4XaCjoP5YM8Gj1BRGxVt2DUkf5CilmcytKvGzWyDOUTXayRK-umkmzsPjBGTfttVFeQ2PCuEE19fioldVSxT6nwxUFdLhXVlC78EyG5N_tXo2X9mL98jfughSGpBvnBlz-wof1_UvqKrBMrcYo9hTGRg304yE_dZfcig3s"
+                src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.46 PM.jpeg"
                 alt="Dry Red Chilli"
               />
             </div>
@@ -172,7 +172,7 @@ export function HomePage() {
             <div className="aspect-square overflow-hidden">
               <img
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeAwZkAQnyp3ZYG15DuTXaYfaGwlEESFIvJMzT2fLTUEO7bqTwHRGvPiV0lqyqGXEOq5mK9exTj5Fvw5hxJ315mGK3zv8TLcx1UahDenHWif5PJaeinkWvXGa2EKP5h9KBDERtb5O7ClgQpY0Vn66UwBipkVyrJLvD_6q-3QHOGdd-XGNCnUfk_fZtRQH33zRk8MBt36AK-UskuwuCuAqHRmlvyOvOCJADnNwXJ11znQfTl5wNG4YJmcLlsLXd-nIfDqOqDzmK7U8"
+                src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.06 PM.jpeg"
                 alt="Fresh Onion"
               />
             </div>
@@ -190,7 +190,7 @@ export function HomePage() {
             <div className="aspect-square overflow-hidden">
               <img
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5omLERNZs06Lj7s2-yYYzMt5FPF6Sc2qewoUwzkdCYEQkwf12FaSLBYDZ1sbDxZFXJRGvYu-YkjlTQxvm9Ghgl05nonCmZh5QQLiHpkeas_zajSdPdftXC5S9ZjR472dgKCsLH8Wj2T_G2c30P83EC54Sct3v50xBd3CsKYy6uWGwSUQJiY3UaAD7XkTZb8EO9-vg9r2q8XiPngubCYcPEGwtLgZOPi-swRuHJPmOvjOcplECKbTmrTmoAKPCxu6KCdffbL486Y"
+                src="/Images-Videos/Groundnut,_seeds.jpg"
                 alt="Ground Nuts"
               />
             </div>
@@ -208,7 +208,7 @@ export function HomePage() {
             <div className="aspect-square overflow-hidden">
               <img
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKsJy-a5VkAzuJwsjnv6fcapsNgwOvBtRcHlAE1On3Hw2dBwcPm3g53ZbUwbq3zBKjfqDSo1vTj43w_ndSjy32dAiyuL6Pb1pkprqWZA1NONz6aLs12JQ7C2KoSlduczt21sXmQnyo4l-BuCRw7BSm6TTCA8u2Kudh-WkToMzw7TMahUhw1J9Cu-OgboFptl8wroS3OKemKmL3gYip8ylfoxOiNtxfttEvfdMRUz8QK8QS19NSFsRi_GgV5VcnG32hz4hxR6wfVHM"
+                src="/Images-Videos/sugar.png"
                 alt="Sugar"
               />
             </div>
@@ -359,7 +359,7 @@ export function HomePage() {
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmArGSodJ56ETdN5CS8VAc9a-CcBpbMWblIu1rcdFAsaa76ITaeAScy_YCWZ5mR9WbFyYA9AqkL3QhPiVpwhOkjQvPKtRQasdbhV7rS9Pw8buOfHpWsAMp9vqJ1WRkqMX6xt05PbyTnBB-DXHx3teBGiiscbLN2H-qVG1nmz7zeseC4Odm8W5vS3X3yqNXWwC2pdGJsNPz14F3CxI-N_W2Z_4mVpYBMPYnDjIiVbOEAx0cCwGAl9Uo9qkq64Tnxd2wjfNk8j4hmlI"
+            src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.09 PM.jpeg"
             alt="Shipping container terminal"
           />
           <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>

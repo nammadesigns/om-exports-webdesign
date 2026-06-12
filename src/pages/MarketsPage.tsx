@@ -45,7 +45,7 @@ export function MarketsPage() {
             <div className="hidden md:block relative h-[600px]">
               <img
                 className="w-full h-full object-cover rounded-xl shadow-2xl border border-white/10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBeiIKOCfhCAJGUP6Olq0gx3s7E0tzQqJE_EkRPQ1RenFvBJGY0W9PtORDOGGrUztesbdP2me6kkvkk2FGaywRu5JgXwh9H7YjDJV91bp_Acx880sQioRg9mUfj-dE_0ZuIR3hp5CPUHL6TpcFWhrdg_8Rvb1UORGXPOGFr3b5v6-owjJbdA39l6_cuMkJUWxhBUWhUTu9IX0Na24X3v2BAKjyxbTlZwf_uamk0x13H8oUnvPGqFSUaBg5zYAg7lMz3C6hEhHy6-o"
+                src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.08 PM (1).jpeg"
                 alt="Container ship departing Indian port at golden hour"
               />
             </div>
@@ -78,7 +78,7 @@ export function MarketsPage() {
               <div className="relative w-full h-full flex items-center justify-center">
                 <img
                   className="w-full h-full object-contain opacity-50 grayscale contrast-125"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-GZ2hfjVsnO3K4nnQbkc2abciX2JTh_MFyaexcot8O-0xo41p8SDjnIhB1yEmryabVULJuuMizvIUvEukRTsfl737cMbVCZ5Oocgiup9K3HbtDq-T03NbEkUw50F2PsqbjHoDq8rRJnvrVSj4jt3AjUSADt-APfbJl_Z1xtSfTtl03-05uWcoaRYOH3BiHPt0yfqJL5W1lu-dVPjScJQGF0NgaVx0b5Wm4PGpk-gKmrL4PMxOUbuCW3IS7MQVzr09CESqMUKM8Ns"
+                  src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.25.37 PM.jpeg"
                   alt="World map showing export destinations"
                 />
 
@@ -116,7 +116,7 @@ export function MarketsPage() {
               <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
                 <img
                   className="w-full h-full object-cover grayscale"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRlTmKYnCu5MOsTCraY0dC4h832QCXGGtbj0f-fkMnYpmNSuy8WMc4o9XCmiYNiswrd1Byj21zTkHApKVBeRfoCkO8PulcmLdRvqMnWcEJ0Ba5fZkV6zCawOsp5Gw7YiqnhcMOV8l59YvqCpNWIOXnYyKC4AmmdmchdkR78xIMl3T76xxQlpsod8DSh9vpVRlR4XoFwwYlR-r5Hw96xQ9WqsRjoRivOli_vn9nPYg_AIv92ZFaaZMqzYCahTuKt3DY5KACbAkQpxE"
+                  src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.09 PM.jpeg"
                   alt="Singapore skyline"
                 />
               </div>
@@ -267,7 +267,7 @@ export function MarketsPage() {
           <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover opacity-5"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZGxwTGI97tqBB8gw-WBDlYHRCvT-DaZu6DP5d4dDMDh5aE2BEg5V-JZGZwd3R0LwIjcRUj6I95PygagYpbXwkOft0eOmroc_j_4qZkI-vP2o_HAwrbAydQ7gQF-3PzlueLeSQ4fWGo2JFgHiYwml5axRXdB4vew6K9eZndLY_ThU6AYF6qustrB0GlYB9thccJZaE2f1O_lu-T3hk_cUz-NF4J88p8QrvgS5tNkgEBmtweBUZcm7urkAISYUQ7BXRg5PJltvdDE"
+              src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.06 PM.jpeg"
               alt="Luxury hotel lobby"
             />
           </div>

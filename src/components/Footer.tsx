@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
-    <footer className="w-full py-section-gap bg-primary text-on-primary">
+    <footer className="w-full pt-section-gap pb-12 bg-primary text-on-primary">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="col-span-1">
           <div className="font-display-xl text-subheading-md text-primary-fixed mb-6">OM EXPORTS</div>

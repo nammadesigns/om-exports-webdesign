@@ -33,7 +33,7 @@ export function AboutPage() {
             <div className="relative aspect-[4/5] bg-surface-container-high overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUL3hkbbQBMbUdYJsxBZ9b2ZILBuqsagW5WkuU74U_QO_Wn1by8Ign6mK35Ub0NZqcHNUfXZFnhNYgKAYXimUFr7XeM8RCeVbCg58cCWbV5F5Lo-7KLzm3wlCGfs0ic1Qf2VT804z4m7ChhxaBVxwzCAl9VUkMxABo9hSTJMVKhn4pNZLCtE9AAJJ_GEj68LaTbu9QQPBHTOZ6RbesaCjMOo7DPl4mmE9amGO29WSLO_L1BeuinFvDFSvYTWZ9_uUtjUZcYTyfRQ4"
+                src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.25.39 PM.jpeg"
                 alt="Chilli fields in Karnataka"
               />
               <div className="absolute bottom-0 right-0 p-8 bg-surface-bright/90 backdrop-blur-sm max-w-xs">
@@ -74,7 +74,7 @@ export function AboutPage() {
               <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
                 <img
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC-ddSXHYpDoBWiMxgA831bIxx3MN06z8qjMNRdml7SXhHVMUze8PGqOoRMe0GqJVLzsZ7CPsUgc338u-jVVIU0sM7IUOsbMVTzIp7hm7EN89QldcnhhMZk3fWs2pZcG-JiHRanbYxqFvcMXZo1vHXNWrHGDbPDSZCaG9o5olhAct6OvJHIls7pk05UWM0wn9EUttuhuCQRtHbbfQS4i-99DnGSDh6R779zKr1E8ceVjzohwxq-_6dzXNGO5Zq19-9LbAs5pDa9mk"
+                  src="/Images-Videos/WhatsApp Image 2026-06-07 at 1.01.24 PM.jpeg"
                   alt="Omkar Nath Sharma"
                 />
               </div>
@@ -112,7 +112,7 @@ export function AboutPage() {
             <div className="md:col-span-2 row-span-2 relative group overflow-hidden">
               <img
                 className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39g0LO6fnoXFNymSDSN9QYZ6YPlbLYsYkZjXSRwLPqh9GdTixfajbhRbM-r1MFGNTjY3oEijRWI8k2m1gakdGb3ntu2aWtp_yQTKm7wRL3zdYhYN58-xwGC5ULcvFHa-K69q5E5XUYK2ky_BYIZ-k63GkarVMUQqwZYwuXtNcmfAKJ-cgzFBqmTRjrfP241rQU02XoYf2lV36pDN_ogJIijAWzLA2vqLO1f2c0oE6N3pPANI5Wz_C_Hk_y6ipjPJbGcejLey0OhA"
+                src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.09 PM.jpeg"
                 alt="Smart Warehousing"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -125,7 +125,7 @@ export function AboutPage() {
             <div className="relative group overflow-hidden">
               <img
                 className="w-full h-[234px] object-cover group-hover:scale-105 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHAfokSgq1gHzlgPSfm1DOajXR7ug2V97J0A8uNpv18UsZr6R7e2abzF5M8j2Ry7oza9JFqa0RZ_j7Nzm_IEOSKn19bZwAjv0Rdf8225E9y6G0m-9-PAYbQACyuFTC4uXICHGSoSSLIubMmStTNryLeRgbqoV0973VuVUUkQY1u1-epHeyLStp2j5_sm9XcHcgAD7Q8DTCdvAuxkPSDa9RAbtRlQfMGE8fDjQyzbfjGWltMY0WQZIgKsc1p-7QwA0exPBWvDoJAI"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
                 alt="Testing Lab"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -138,7 +138,7 @@ export function AboutPage() {
             <div className="relative group overflow-hidden">
               <img
                 className="w-full h-[234px] object-cover group-hover:scale-105 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFlWjlrvWjMQPPN6Tve2ljpDcjM9olcasIDVZW_MAHMHijKteKSBs-WRoir7GFb0tE7MbJO7M-IuYwJc1SLP7oo7GI_PRX-ibN90hO3_F3ao1h0bJ-u5C5va15hpIQDwN6PSq7hvC2CgEVhIJAw2Qd-abPoNJnTcjGcXH4g7m90t0mQ_MepFwNNdMhw0MwtoqLVAO8KRLmELmdHuQLnsQ4edAwfc6eq05-Ne1ZnklEYJLKcQ_W7PmOpUT7rUS_qLwNWQde-iIIvVQ"
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200"
                 alt="Export Packaging"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
