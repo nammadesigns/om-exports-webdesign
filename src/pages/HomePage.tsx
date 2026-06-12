@@ -91,9 +91,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <span className="material-symbols-outlined text-white text-3xl">expand_more</span>
-        </div>
+
       </section>
 
       {/* Company Overview */}

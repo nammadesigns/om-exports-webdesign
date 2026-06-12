@@ -39,7 +39,7 @@ export function Header() {
           <Link to="/products" className={getLinkClass('/products')}>Products</Link>
           <Link to="/markets" className={getLinkClass('/markets')}>Markets</Link>
           <Link to="/services" className={getLinkClass('/services')}>Services</Link>
-          <Link to="/about" className={getLinkClass('/about')}>Company</Link>
+          <Link to="/about" className={getLinkClass('/about')}>About Us</Link>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
@@ -68,7 +68,7 @@ export function Header() {
           <Link to="/products" className={getMobileLinkClass('/products')} onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
           <Link to="/markets" className={getMobileLinkClass('/markets')} onClick={() => setIsMobileMenuOpen(false)}>Markets</Link>
           <Link to="/services" className={getMobileLinkClass('/services')} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-          <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>Company</Link>
+          <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <div className="p-6">
             <button className="w-full bg-primary text-on-primary px-6 py-3 font-button-text text-button-text hover:scale-95 duration-200 ease-in-out text-center">
               Request Quote
