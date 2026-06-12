@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export function ServicesPage() {
   return (
     <div className="bg-surface grainy-bg text-on-surface min-h-screen pt-32">
-      <div className="px-margin-desktop max-w-container-max mx-auto py-section-gap">
+      <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-section-gap">
         <div className="text-center mb-16">
           <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block">
             Our Services

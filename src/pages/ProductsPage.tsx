@@ -122,7 +122,7 @@ export function ProductsPage() {
   return (
     <div className="bg-surface font-body-rt text-on-surface grainy-bg min-h-screen">
       {/* Hero Section */}
-      <header className="pt-32 pb-16 px-margin-desktop max-w-container-max mx-auto">
+      <header className="pt-32 pb-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-outline-variant/30 pb-12">
           <div className="max-w-2xl">
             <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block">
@@ -141,7 +141,7 @@ export function ProductsPage() {
       </header>
 
       {/* Main Content Layout */}
-      <main className="px-margin-desktop max-w-container-max mx-auto pb-section-gap">
+      <main className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-section-gap">
         <div className="flex flex-col lg:flex-row gap-gutter">
           {/* Sidebar Filter */}
           <aside className="w-full lg:w-72 flex-shrink-0 space-y-8">
@@ -252,7 +252,7 @@ export function ProductsPage() {
 
       {/* Trust Bar */}
       <section className="bg-surface-container-low py-16 border-y border-outline-variant/20 overflow-hidden">
-        <div className="px-margin-desktop max-w-container-max mx-auto">
+        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <h2 className="font-label-sm text-label-sm text-center text-outline-variant tracking-[0.2em] uppercase mb-12">
             Globally Certified Quality Standards
           </h2>

@@ -22,7 +22,7 @@ export function MarketsPage() {
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative h-[819px] flex items-center overflow-hidden bg-primary-container">
-          <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+          <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
             <div className="space-y-6">
               <span className="inline-block text-secondary-fixed font-label-sm tracking-widest uppercase">
                 Global Distribution
@@ -54,7 +54,7 @@ export function MarketsPage() {
 
         {/* Interactive Map Section (Dark Theme) */}
         <section className="py-section-gap map-container relative overflow-hidden" id="interactive-map">
-          <div className="px-margin-desktop max-w-container-max mx-auto">
+          <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
             <div className="text-center mb-16 space-y-4">
               <h2 className="font-display-xl text-headline-lg text-primary-fixed">Our Global Presence</h2>
               <p className="text-on-primary-container max-w-2xl mx-auto">
@@ -109,7 +109,7 @@ export function MarketsPage() {
         </section>
 
         {/* Region Cards (Bento Style) */}
-        <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
             {/* Asia */}
             <div className="md:col-span-8 group relative overflow-hidden bg-white market-card-shadow border border-outline-variant/30 p-10 flex flex-col justify-between">
@@ -190,7 +190,7 @@ export function MarketsPage() {
 
         {/* Logistics Network */}
         <section className="py-section-gap bg-surface" id="logistics">
-          <div className="px-margin-desktop max-w-container-max mx-auto">
+          <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
             <div className="flex flex-col md:flex-row gap-gutter items-end mb-16">
               <div className="md:w-1/2">
                 <h2 className="font-display-xl text-headline-lg text-primary mb-4">Network Logistics</h2>
@@ -271,7 +271,7 @@ export function MarketsPage() {
               alt="Luxury hotel lobby"
             />
           </div>
-          <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center">
+          <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
             <h2 className="font-display-xl text-headline-lg text-primary mb-16">Why We Are Preferred Globally</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
               {[

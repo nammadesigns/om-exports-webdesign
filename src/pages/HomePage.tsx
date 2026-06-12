@@ -72,7 +72,7 @@ export function HomePage() {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full text-white">
+        <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full text-white">
           <div className="max-w-3xl">
             <h1 className="font-display-xl text-display-xl mb-6 text-shadow-sm leading-tight">
               Exporting Premium Indian Agricultural Products <span className="text-gold-accent">Worldwide</span>
@@ -97,7 +97,7 @@ export function HomePage() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto reveal">
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal">
         <div className="grid md:grid-cols-2 gap-gutter items-center">
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold-accent"></div>
@@ -123,7 +123,7 @@ export function HomePage() {
 
       {/* Stats Counter */}
       <section className="stats-section bg-primary py-24">
-        <div className="px-margin-desktop max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="font-display-xl text-4xl text-secondary-fixed mb-2 counter" data-target="50">0</div>
             <div className="text-on-primary-container font-label-sm uppercase">Countries Served</div>
@@ -144,7 +144,7 @@ export function HomePage() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="text-center mb-16 reveal">
           <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Premium Product Showcase</h2>
           <div className="w-20 h-1 bg-gold-accent mx-auto"></div>
@@ -227,7 +227,7 @@ export function HomePage() {
 
       {/* Global Presence */}
       <section className="bg-primary-container py-section-gap relative overflow-hidden">
-        <div className="px-margin-desktop max-w-container-max mx-auto relative z-10 grid lg:grid-cols-2 gap-gutter items-center">
+        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10 grid lg:grid-cols-2 gap-gutter items-center">
           <div>
             <span className="text-gold-accent font-label-sm uppercase tracking-widest block mb-4">Our Reach</span>
             <h2 className="font-headline-lg text-headline-lg text-white mb-6">Connecting India to the World</h2>
@@ -266,7 +266,7 @@ export function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Commitment to Excellence</h2>
           <div className="w-20 h-1 bg-gold-accent mx-auto"></div>
@@ -296,7 +296,7 @@ export function HomePage() {
 
       {/* Export Process */}
       <section className="py-section-gap bg-surface-container-low">
-        <div className="px-margin-desktop max-w-container-max mx-auto">
+        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <div className="mb-16 reveal">
             <h2 className="font-headline-lg text-headline-lg text-primary text-center">Our Export Process</h2>
           </div>
@@ -323,7 +323,7 @@ export function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="grid md:grid-cols-2 gap-gutter items-center">
           <div className="reveal">
             <h2 className="font-headline-lg text-headline-lg text-primary mb-6">What Our Partners Say</h2>
@@ -367,7 +367,7 @@ export function HomePage() {
           <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>
         </div>
 
-        <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center">
+        <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
           <h2 className="font-display-xl text-4xl md:text-5xl text-white mb-8">Ready to Scale Your Sourcing?</h2>
           <p className="text-on-primary-container text-lg max-w-2xl mx-auto mb-12">
             Connect with our trade experts today to discuss custom requirements, bulk pricing, and international logistics solutions.

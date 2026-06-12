@@ -11,7 +11,7 @@ export function AboutPage() {
     <div className="bg-surface grainy-bg text-on-surface font-body-rt">
       <main>
         {/* Hero Section */}
-        <section className="pt-40 pb-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="pt-40 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <nav className="flex gap-2 mb-8 items-center font-label-sm text-label-sm text-outline">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
             <span className="material-symbols-outlined text-[12px]">chevron_right</span>
@@ -28,7 +28,7 @@ export function AboutPage() {
         </section>
 
         {/* Company Story */}
-        <section className="pb-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <div className="grid md:grid-cols-2 gap-gutter items-center mb-24">
             <div className="relative aspect-[4/5] bg-surface-container-high overflow-hidden">
               <img
@@ -69,7 +69,7 @@ export function AboutPage() {
 
         {/* Founder Message */}
         <section className="bg-primary-container py-section-gap text-on-primary">
-          <div className="px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-12 gap-gutter items-center">
+          <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-5 mb-12 md:mb-0">
               <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
                 <img
@@ -101,7 +101,7 @@ export function AboutPage() {
         </section>
 
         {/* Infrastructure */}
-        <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <div className="text-center mb-16">
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] block mb-4">Our Facilities</span>
             <h2 className="font-headline-lg text-headline-lg text-primary">Precision Infrastructure</h2>
@@ -151,7 +151,7 @@ export function AboutPage() {
 
         {/* Supply Chain */}
         <section className="py-section-gap bg-surface-container-low overflow-hidden">
-          <div className="px-margin-desktop max-w-container-max mx-auto">
+          <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
             <div className="grid md:grid-cols-2 gap-20 items-center">
               <div>
                 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] block mb-4">Our Network</span>
@@ -196,7 +196,7 @@ export function AboutPage() {
         </section>
 
         {/* Timeline Section */}
-        <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           <div className="text-center mb-24">
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] block mb-4">Our Evolution</span>
             <h2 className="font-headline-lg text-headline-lg text-primary">The Growth Journey</h2>
@@ -244,7 +244,7 @@ export function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto text-center border-t border-outline-variant/20">
+        <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center border-t border-outline-variant/20">
           <h2 className="font-display-xl text-headline-lg mb-8">Ready to Partner for Premium Quality?</h2>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <button className="bg-primary text-on-primary px-12 py-5 font-button-text text-button-text hover:shadow-xl transition-all duration-300">
