@@ -1,8 +1,13 @@
 import { useEffect } from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+import { AnimatedMap } from '../components/AnimatedMap';
+
+
 
 export function MarketsPage() {
+  useScrollReveal('[data-reveal]');
+
   useEffect(() => {
-    // Micro-interactions for map markers
     const markers = document.querySelectorAll('.animate-pulse-gold');
     markers.forEach((marker) => {
       const el = marker as HTMLElement;
@@ -17,6 +22,7 @@ export function MarketsPage() {
     });
   }, []);
 
+
   return (
     <div className="bg-background text-on-surface grain-texture font-body-rt overflow-x-hidden">
       <main className="pt-20">
@@ -24,16 +30,16 @@ export function MarketsPage() {
         <section className="relative h-[819px] flex items-center overflow-hidden bg-primary-container">
           <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
             <div className="space-y-6">
-              <span className="inline-block text-secondary-fixed font-label-sm tracking-widest uppercase">
+              <span className="inline-block text-secondary-fixed font-label-sm tracking-widest uppercase animate-fade-in">
                 Global Distribution
               </span>
-              <h1 className="font-display-xl text-display-xl text-primary-fixed leading-none">
+              <h1 className="font-display-xl text-display-xl text-primary-fixed leading-none animate-slide-up">
                 Feeding the World from India
               </h1>
-              <p className="text-on-primary-container text-subheading-md max-w-md">
+              <p className="text-on-primary-container text-subheading-md max-w-md animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 Bridging Indian agricultural excellence with international demand through high-stakes precision logistics and artisanal care.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 animate-slide-up" style={{ animationDelay: '0.35s' }}>
                 <a className="bg-secondary-container text-on-secondary-container px-8 py-4 font-button-text transition-transform hover:scale-105" href="#interactive-map">
                   Explore Markets
                 </a>
@@ -42,7 +48,7 @@ export function MarketsPage() {
                 </a>
               </div>
             </div>
-            <div className="hidden md:block relative h-[600px]">
+            <div className="hidden md:block relative h-[600px]" data-reveal="fade-left" style={{ transitionDelay: '300ms' }}>
               <img
                 className="w-full h-full object-cover rounded-xl shadow-2xl border border-white/10"
                 src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.08 PM (1).jpeg"
@@ -51,6 +57,7 @@ export function MarketsPage() {
             </div>
           </div>
         </section>
+
 
         {/* Interactive Map Section (Dark Theme) */}
         <section className="py-section-gap map-container relative overflow-hidden" id="interactive-map">
@@ -63,7 +70,7 @@ export function MarketsPage() {
             </div>
 
             {/* Map UI */}
-            <div className="relative w-full aspect-[21/9] bg-primary/20 rounded-full border border-white/5 p-4 overflow-hidden group">
+            <div className="relative w-full aspect-square md:aspect-[21/9] bg-primary/20 rounded-3xl md:rounded-full border border-white/5 p-4 overflow-hidden group">
               <div className="absolute inset-0 opacity-20">
                 <div
                   className="w-full h-full"
@@ -74,24 +81,11 @@ export function MarketsPage() {
                 ></div>
               </div>
 
-              {/* World Map */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                <img
-                  className="w-full h-full object-contain opacity-50 grayscale contrast-125"
-                  src="/Images-Videos/WhatsApp Image 2026-06-07 at 12.25.37 PM.jpeg"
-                  alt="World map showing export destinations"
-                />
-
-                {/* Pulse Markers */}
-                <div className="absolute top-[45%] left-[68%] w-4 h-4 bg-secondary-fixed rounded-full animate-pulse-gold shadow-[0_0_15px_rgba(255,222,170,0.6)]"></div>
-                <div className="absolute top-[38%] left-[72%] w-4 h-4 bg-secondary-fixed rounded-full animate-pulse-gold shadow-[0_0_15px_rgba(255,222,170,0.6)]"></div>
-                <div className="absolute top-[42%] left-[55%] w-4 h-4 bg-secondary-fixed rounded-full animate-pulse-gold shadow-[0_0_15px_rgba(255,222,170,0.6)]"></div>
-                <div className="absolute top-[68%] left-[52%] w-4 h-4 bg-secondary-fixed rounded-full animate-pulse-gold shadow-[0_0_15px_rgba(255,222,170,0.6)]"></div>
-
-                {/* Labels */}
-                <div className="absolute top-[47%] left-[69%] text-primary-fixed text-[10px] font-label-sm">SINGAPORE</div>
-                <div className="absolute top-[44%] left-[53%] text-primary-fixed text-[10px] font-label-sm">UAE</div>
+              {/* Interactive SVG World Map */}
+              <div className="relative w-full h-full z-10 flex items-center justify-center">
+                <AnimatedMap />
               </div>
+
 
               {/* Market Legend */}
               <div className="absolute bottom-8 left-8 bg-primary-container/80 backdrop-blur-md p-6 border border-white/10 rounded-lg">
@@ -110,9 +104,10 @@ export function MarketsPage() {
 
         {/* Region Cards (Bento Style) */}
         <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter" data-stagger>
             {/* Asia */}
-            <div className="md:col-span-8 group relative overflow-hidden bg-white market-card-shadow border border-outline-variant/30 p-10 flex flex-col justify-between">
+            <div className="md:col-span-8 group relative overflow-hidden bg-white market-card-shadow border border-outline-variant/30 p-10 flex flex-col justify-between" data-reveal="fade-right">
+
               <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
                 <img
                   className="w-full h-full object-cover grayscale"
@@ -147,7 +142,8 @@ export function MarketsPage() {
             </div>
 
             {/* Middle East */}
-            <div className="md:col-span-4 bg-primary text-on-primary p-10 market-card-shadow flex flex-col justify-between group">
+            <div className="md:col-span-4 bg-primary text-on-primary p-10 market-card-shadow flex flex-col justify-between group" data-reveal="fade-left">
+
               <div>
                 <span className="text-secondary-fixed font-label-sm tracking-widest uppercase mb-2 block">Region 02</span>
                 <h3 className="font-display-xl text-headline-lg leading-tight mb-4">Middle East</h3>
@@ -166,7 +162,8 @@ export function MarketsPage() {
             </div>
 
             {/* Africa */}
-            <div className="md:col-span-12 bg-surface-container-low p-10 border border-outline-variant/20 flex flex-col md:flex-row gap-gutter items-center">
+            <div className="md:col-span-12 bg-surface-container-low p-10 border border-outline-variant/20 flex flex-col md:flex-row gap-gutter items-center" data-reveal="fade-up">
+
               <div className="flex-1">
                 <span className="text-secondary font-label-sm tracking-widest uppercase mb-2 block">Region 03</span>
                 <h3 className="font-display-xl text-headline-lg text-primary mb-4">Africa & Emerging</h3>
@@ -210,9 +207,10 @@ export function MarketsPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" data-stagger>
               {/* Port Route Card - Mumbai */}
-              <div className="bg-white p-8 market-card-shadow border border-outline-variant/30 flex gap-6">
+              <div className="bg-white p-8 market-card-shadow border border-outline-variant/30 flex gap-6" data-reveal="fade-right">
+
                 <div className="w-24 h-24 bg-primary flex items-center justify-center flex-shrink-0">
                   <span className="material-symbols-outlined text-white text-4xl">anchor</span>
                 </div>
@@ -236,7 +234,8 @@ export function MarketsPage() {
               </div>
 
               {/* Port Route Card - Chennai */}
-              <div className="bg-white p-8 market-card-shadow border border-outline-variant/30 flex gap-6">
+              <div className="bg-white p-8 market-card-shadow border border-outline-variant/30 flex gap-6" data-reveal="fade-left">
+
                 <div className="w-24 h-24 bg-primary flex items-center justify-center flex-shrink-0">
                   <span className="material-symbols-outlined text-white text-4xl">sailing</span>
                 </div>

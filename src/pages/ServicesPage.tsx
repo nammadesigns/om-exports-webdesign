@@ -1,10 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
 
 export function ServicesPage() {
+  const navigate = useNavigate();
+  useScrollReveal('[data-reveal]');
   return (
+
     <div className="bg-surface grainy-bg text-on-surface min-h-screen pt-32">
       <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-section-gap">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-reveal="fade-up">
           <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block">
             Our Services
           </span>
@@ -16,7 +21,8 @@ export function ServicesPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-16" data-stagger>
+
           {[
             {
               icon: 'agriculture',
@@ -49,7 +55,7 @@ export function ServicesPage() {
               desc: 'Flexible payment terms and LC processing support with major international banks.',
             },
           ].map((service, idx) => (
-            <div key={idx} className="group bg-surface-container-lowest p-8 rounded-xl ambient-shadow border border-outline-variant/20 hover:border-secondary transition-all">
+            <div key={idx} className="group bg-surface-container-lowest p-8 rounded-xl ambient-shadow border border-outline-variant/20 hover:border-secondary transition-all hover-lift" data-reveal="fade-up">
               <div className="w-14 h-14 rounded bg-primary flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
                 <span className="material-symbols-outlined text-white text-3xl">{service.icon}</span>
               </div>
@@ -59,7 +65,8 @@ export function ServicesPage() {
           ))}
         </div>
 
-        <div className="bg-primary p-12 rounded-xl text-center">
+        <div className="bg-primary p-12 rounded-xl text-center" data-reveal="zoom-in">
+
           <h2 className="font-headline-lg text-headline-lg-mobile text-primary-fixed mb-4">
             Need a Custom Solution?
           </h2>
@@ -67,7 +74,10 @@ export function ServicesPage() {
             Our trade experts can design a tailored export program specific to your market needs.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-secondary-fixed text-primary px-8 py-4 font-button-text rounded-lg hover:bg-white transition-colors">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="bg-secondary-fixed text-primary px-8 py-4 font-button-text rounded-lg hover:bg-white transition-colors"
+            >
               Request Consultation
             </button>
             <Link to="/products" className="border border-white/30 text-white px-8 py-4 font-button-text rounded-lg hover:bg-white/10 transition-colors">

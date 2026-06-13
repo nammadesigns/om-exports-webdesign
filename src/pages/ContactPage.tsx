@@ -1,14 +1,18 @@
 import React from 'react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
 
 export function ContactPage() {
+  useScrollReveal('[data-reveal]');
   return (
+
     <div className="bg-surface grainy-bg text-on-surface min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 text-center px-margin-mobile">
-          <h1 className="font-display-xl text-display-xl md:text-display-xl text-headline-lg-mobile text-primary mb-4">Connect with our Global Trade Desk</h1>
-          <div className="w-24 h-1 bg-secondary mx-auto"></div>
-          <p className="mt-6 font-body-rt text-body-rt text-on-surface-variant max-w-2xl mx-auto">
+      <section className="relative h-[400px] flex items-center justify-center overflow-hidden animate-fade-in">
+        <div className="relative z-10 text-center px-margin-mobile animate-slide-up">
+          <h1 className="font-display-xl text-display-xl md:text-display-xl text-headline-lg-mobile text-primary mb-4 transition-smooth hover:text-gold-accent">Connect with our Global Trade Desk</h1>
+          <div className="w-24 h-1 bg-secondary mx-auto animate-glow"></div>
+          <p className="mt-6 font-body-rt text-body-rt text-on-surface-variant max-w-2xl mx-auto transition-smooth">
             Bridging Indian agricultural excellence with international demand. Our experts are ready to facilitate your next high-volume procurement.
           </p>
         </div>
@@ -18,8 +22,9 @@ export function ContactPage() {
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           {/* Left: Contact Form */}
-          <div className="glass-panel p-10 rounded-xl custom-shadow bg-white/80 backdrop-blur-xl border border-outline-variant/20">
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-8">Get a Custom Quote</h2>
+          <div className="glass-panel p-10 rounded-xl custom-shadow bg-white/80 backdrop-blur-xl border border-outline-variant/20 hover-lift transition-smooth" data-reveal="fade-right">
+
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-8 transition-smooth hover:text-gold-accent">Get a Custom Quote</h2>
             <form className="space-y-6" onSubmit={(e) => {
               e.preventDefault();
               const btn = e.currentTarget.querySelector('button');
@@ -94,38 +99,54 @@ export function ContactPage() {
           </div>
 
           {/* Right: Contact Details */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center" data-reveal="fade-left" style={{ transitionDelay: '200ms' }}>
+
             <div className="space-y-12">
-              <div>
-                <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block">Corporate Headquarters</span>
-                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3">
-                  <span className="material-symbols-outlined text-secondary">location_on</span>
+              <div className="">
+                <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block animate-fade-in">Corporate Headquarters</span>
+                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3 transition-smooth hover:text-gold-accent">
+                  <span className="material-symbols-outlined text-secondary animate-pulse-slow">location_on</span>
                   Location Details
                 </h3>
-                <p className="font-body-rt text-body-rt text-on-surface-variant leading-relaxed max-w-sm">
+                <p className="font-body-rt text-body-rt text-on-surface-variant leading-relaxed max-w-sm transition-smooth">
                   2696/A/1940/296/A, Huliyar Road, Nanjaina Kottige, Hiriyur, Chitradurga, Karnataka – 577598, India.
                 </p>
               </div>
-              <div>
-                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3">
-                  <span className="material-symbols-outlined text-secondary">mail</span>
+              <div className=" ">
+                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3 transition-smooth hover:text-gold-accent">
+                  <span className="material-symbols-outlined text-secondary animate-pulse-slow">mail</span>
                   Direct Correspondence
                 </h3>
                 <div className="space-y-2">
-                  <p className="font-body-rt text-body-rt text-on-surface-variant">Exports: trade@omexports.com</p>
-                  <p className="font-body-rt text-body-rt text-on-surface-variant">Inquiries: info@omexports.com</p>
+                  <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">Exports: Omexports1964@gmail.com</p>
+                  <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">Inquiries: nagbu888@gmail.com</p>
                 </div>
               </div>
-              <div>
-                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3">
-                  <span className="material-symbols-outlined text-secondary">call</span>
-                  Voice Support
+              <div className="">
+                <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3 transition-smooth hover:text-gold-accent">
+                  <span className="material-symbols-outlined text-secondary animate-pulse-slow">call</span>
+                  Team Contact Information
                 </h3>
-                <div className="space-y-2">
-                  <p className="font-body-rt text-body-rt text-on-surface-variant">+91 98765 43210 (Main Line)</p>
-                  <p className="font-body-rt text-body-rt text-on-surface-variant">+91 80 1234 5678 (Trade Desk)</p>
+                <div className="space-y-3">
+                  <div className="transition-smooth">
+                    <p className="font-body-rt text-body-rt text-primary font-semibold">Ms Shruthi ,CEO</p>
+                    <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">+91 94811 81565</p>
+                  </div>
+                  <div className="transition-smooth">
+                    <p className="font-body-rt text-body-rt text-primary font-semibold">Arvind Kumar ,Director</p>
+                    <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">+91 96636 89483</p>
+                  </div>
+                  <div className="transition-smooth">
+                    <p className="font-body-rt text-body-rt text-primary font-semibold">Manjunat,Director</p>
+                    <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">+91 96632 32458</p>
+                  </div>
+                  <div className="transition-smooth">
+                    <p className="font-body-rt text-body-rt text-primary font-semibold">M Nagabhushana , Managing Director</p>
+                    <p className="font-body-rt text-body-rt text-on-surface-variant transition-smooth hover:text-primary">+91 98809 32299</p>
+                  </div>
                 </div>
               </div>
+
               <div>
                 <h3 className="font-subheading-md text-subheading-md text-primary mb-4 flex items-center gap-3">
                   <span className="material-symbols-outlined text-secondary">schedule</span>
@@ -137,7 +158,7 @@ export function ContactPage() {
                 </p>
               </div>
               <div className="pt-6 border-t border-outline-variant/30">
-                <a className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 transition-all shadow-md group" href="#">
+                <a className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 transition-all shadow-md group" href="https://wa.me/919880932299" target="_blank" rel="noopener noreferrer">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>
                   <span className="font-button-text">Connect on WhatsApp</span>
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -155,9 +176,10 @@ export function ContactPage() {
             <h2 className="font-headline-lg text-headline-lg text-primary-fixed mb-4">Global Network Points</h2>
             <p className="font-body-rt text-body-rt text-on-primary-container max-w-xl">Dedicated logistics and quality assurance desks for our primary export markets.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter" data-stagger>
             {/* Asia */}
-            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors">
+            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors" data-reveal="fade-up">
+
               <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-6">language_us</span>
               <h4 className="font-subheading-md text-subheading-md text-white mb-4">Asia Pacific</h4>
               <ul className="space-y-3 font-body-rt text-body-rt text-on-primary-container">
@@ -167,7 +189,8 @@ export function ContactPage() {
               </ul>
             </div>
             {/* Middle East */}
-            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors">
+            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors" data-reveal="fade-up">
+
               <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-6">location_city</span>
               <h4 className="font-subheading-md text-subheading-md text-white mb-4">Middle East & GCC</h4>
               <ul className="space-y-3 font-body-rt text-body-rt text-on-primary-container">
@@ -177,7 +200,8 @@ export function ContactPage() {
               </ul>
             </div>
             {/* Europe */}
-            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors">
+            <div className="p-8 rounded-xl bg-primary-container border border-on-primary-container/10 hover:border-secondary-fixed transition-colors" data-reveal="fade-up">
+
               <span className="material-symbols-outlined text-secondary-fixed text-4xl mb-6">public</span>
               <h4 className="font-subheading-md text-subheading-md text-white mb-4">European Union</h4>
               <ul className="space-y-3 font-body-rt text-body-rt text-on-primary-container">

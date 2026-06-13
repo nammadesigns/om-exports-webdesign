@@ -29,21 +29,25 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h5 className="text-secondary-fixed font-bold mb-6">Newsletter</h5>
-          <p className="text-outline-variant text-sm mb-4">Subscribe to get latest market trends.</p>
-          <div className="flex">
-            <input
-              className="bg-primary-container border-none text-white text-sm focus:ring-1 focus:ring-gold-accent w-full px-4 rounded-l"
-              placeholder="Email Address"
-              type="email"
-            />
-            <button className="bg-gold-accent text-primary px-4 py-2 rounded-r hover:bg-white transition-all">
-              <span className="material-symbols-outlined">send</span>
-            </button>
-          </div>
+        <div className="md:col-span-1">
+          <h5 className="text-secondary-fixed font-bold mb-6">Contact Us</h5>
+          <ul className="space-y-4 text-outline-variant text-sm">
+            <li className="flex items-start gap-2">
+              <span className="material-symbols-outlined text-[18px]">location_on</span>
+              <span>2696/A/1940/296/A, Huliyar Road, Nanjaina Kottige, Hiriyur, Chitradurga, Karnataka – 577598</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-[18px]">mail</span>
+              <a href="mailto:Omexports1964@gmail.com" className="hover:text-secondary-fixed transition-colors">Omexports1964@gmail.com</a>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-[18px]">call</span>
+              <span>+91 98809 32299</span>
+            </li>
+          </ul>
         </div>
       </div>
+
 
       <div className="mt-20 pt-8 border-t border-white/10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center text-outline-variant text-xs flex flex-col items-center gap-2">
         <p>© 2026 OM EXPORTS. Premium Agricultural Logistics. All Rights Reserved.</p>

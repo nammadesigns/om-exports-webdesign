@@ -1,4 +1,8 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
+
 
 const products = [
   {
@@ -6,7 +10,7 @@ const products = [
     name: 'Dry Red Chilli',
     category: 'Spices',
     grade: 'Grade A',
-    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.46 PM.jpeg',
+    image: '/Images-Videos/guntur-chilli.jpg',
     description: 'Available in Guntur & Byadgi types. Hand-picked and sun-dried to perfection.',
     specs: [
       { label: 'Moisture', value: 'Max 12%' },
@@ -18,7 +22,7 @@ const products = [
     name: 'Fresh Onion',
     category: 'Vegetables',
     grade: null,
-    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.06 PM.jpeg',
+    image: '/Images-Videos/red0onin.jpg',
     description: 'Premium Nasik Red variety. Optimized for long-distance transit and shelf life.',
     specs: [
       { label: 'Size', value: '45mm - 60mm+' },
@@ -30,7 +34,7 @@ const products = [
     name: 'Ground Nuts',
     category: 'Oilseeds',
     grade: null,
-    image: '/Images-Videos/Groundnut,_seeds.jpg',
+    image: '/Images-Videos/java-peanut.webp',
     description: 'HPS Bold and Java varieties. High oil content and consistent size calibration.',
     specs: [
       { label: 'Count/Oz', value: '40/50, 50/60' },
@@ -54,7 +58,7 @@ const products = [
     name: 'Yellow Maize',
     category: 'Grains',
     grade: null,
-    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.22.08 PM (1).jpeg',
+    image: '/Images-Videos/Yellow-Maize-01.webp',
     description: 'High-energy animal feed grade. Mechanically cleaned and low moisture content.',
     specs: [
       { label: 'Moisture', value: 'Max 14%' },
@@ -66,25 +70,47 @@ const products = [
     name: 'Coconut Fiber',
     category: 'Fibers',
     grade: null,
-    image: '/Images-Videos/WhatsApp Image 2026-06-07 at 12.25.37 PM.jpeg',
+    image: '/Images-Videos/Coconut-Fibre.webp',
     description: 'Bale-packaged long fiber. Ideal for upholstery and erosion control applications.',
     specs: [
       { label: 'Length', value: '5cm - 15cm' },
       { label: 'Impurity', value: '< 3%' },
     ],
   },
+  {
+    id: 7,
+    name: 'Rice',
+    category: 'Rice',
+    grade: 'Premium',
+    image: '/Images-Videos/rice.jpg',
+    description: 'Premium Basmati & Non-Basmati varieties. Long-grain, aromatic, and aged for superior cooking quality.',
+    specs: [
+      { label: 'Moisture', value: 'Max 14%' },
+      { label: 'Broken', value: '< 5%' },
+    ],
+  },
+
 ];
 
 const categories = [
-  { name: 'All Products', count: 124 },
-  { name: 'Spices', count: 32 },
-  { name: 'Grains', count: 18 },
-  { name: 'Oilseeds', count: 14 },
-  { name: 'Fibers', count: 8 },
+  { name: 'All Products', count: 7 },
+  { name: 'Spices', count: 2 },
+  { name: 'Grains', count: 1 },
+  { name: 'Oilseeds', count: 1 },
+  { name: 'Fibers', count: 1 },
+  { name: 'Rice', count: 1 },
+  { name: 'Vegetables', count: 2 },
 ];
+
 
 export function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState('All Products');
+  const [selectedGrades, setSelectedGrades] = useState<string[]>([]);
+  const navigate = useNavigate();
+
+  useScrollReveal('[data-reveal]');
+
+
 
   useEffect(() => {
     const articleCards = document.querySelectorAll('article');
@@ -115,9 +141,19 @@ export function ProductsPage() {
     };
   }, []);
 
-  const filteredProducts = activeCategory === 'All Products'
-    ? products
-    : products.filter(p => p.category === activeCategory);
+  const filteredProducts = products.filter(p => {
+    const categoryMatch = activeCategory === 'All Products' || p.category === activeCategory;
+    
+    if (selectedGrades.length === 0) return categoryMatch;
+
+    let hasMatch = false;
+    if (selectedGrades.includes('Export Quality (A)') && p.grade === 'Grade A') hasMatch = true;
+    if (selectedGrades.includes('Premium Grade') && p.grade === 'Premium') hasMatch = true;
+    if (selectedGrades.includes('Organic Certified') && p.grade === 'Organic') hasMatch = true;
+
+    return categoryMatch && hasMatch;
+  });
+
 
   return (
     <div className="bg-surface font-body-rt text-on-surface grainy-bg min-h-screen">
@@ -125,20 +161,21 @@ export function ProductsPage() {
       <header className="pt-32 pb-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-outline-variant/30 pb-12">
           <div className="max-w-2xl">
-            <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block">
+            <span className="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-4 block animate-fade-in">
               International Trade Excellence
             </span>
-            <h1 className="font-display-xl text-display-xl text-primary leading-tight">
+            <h1 className="font-display-xl text-display-xl text-primary leading-tight animate-slide-up">
               Premium Agricultural <br />Catalog
             </h1>
           </div>
-          <div className="max-w-sm text-on-surface-variant font-body-rt">
+          <div className="max-w-sm text-on-surface-variant font-body-rt animate-slide-up" style={{ animationDelay: '0.25s' }}>
             <p>
               Curating the finest harvests from the heart of India. We bridge domestic tradition with global logistics precision to deliver certified excellence.
             </p>
           </div>
         </div>
       </header>
+
 
       {/* Main Content Layout */}
       <main className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-section-gap">
@@ -171,11 +208,23 @@ export function ProductsPage() {
                 <div className="space-y-3">
                   {['Export Quality (A)', 'Premium Grade', 'Organic Certified'].map((grade) => (
                     <label key={grade} className="flex items-center gap-3 cursor-pointer group">
-                      <input className="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox" />
+                      <input 
+                        className="rounded border-outline-variant text-secondary focus:ring-secondary" 
+                        type="checkbox" 
+                        checked={selectedGrades.includes(grade)}
+                        onChange={() => {
+                          setSelectedGrades(prev => 
+                            prev.includes(grade) 
+                              ? prev.filter(g => g !== grade) 
+                              : [...prev, grade]
+                          );
+                        }}
+                      />
                       <span className="text-body-rt text-on-surface-variant group-hover:text-on-surface">{grade}</span>
                     </label>
                   ))}
                 </div>
+
               </div>
             </div>
 
@@ -185,9 +234,13 @@ export function ProductsPage() {
                 <p className="text-on-primary-container text-sm mb-6">
                   Our trade desk is available for volume-based negotiations.
                 </p>
-                <button className="w-full bg-secondary-fixed text-on-secondary-fixed py-3 rounded-lg font-button-text hover:bg-white transition-colors">
+                <button
+                  onClick={() => navigate('/contact')}
+                  className="w-full bg-secondary-fixed text-on-secondary-fixed py-3 rounded-lg font-button-text hover:bg-white transition-colors"
+                >
                   Contact Expert
                 </button>
+
               </div>
               <div className="absolute -bottom-4 -right-4 opacity-10">
                 <span className="material-symbols-outlined text-[120px]">public</span>
@@ -197,12 +250,14 @@ export function ProductsPage() {
 
           {/* Product Grid */}
           <section className="flex-grow">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter" data-stagger>
               {filteredProducts.map((product) => (
                 <article
                   key={product.id}
                   className="group bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow border border-outline-variant/10 hover:border-secondary transition-all flex flex-col"
+                  data-reveal="fade-up"
                 >
+
                   <div className="h-64 overflow-hidden relative">
                     <img
                       alt={product.name}
@@ -238,7 +293,10 @@ export function ProductsPage() {
                         </div>
                       ))}
                     </div>
-                    <button className="w-full mt-auto bg-primary text-white py-3 rounded-lg font-button-text hover:bg-secondary transition-all flex items-center justify-center gap-2">
+                    <button 
+                      onClick={() => navigate('/contact')}
+                      className="w-full mt-auto bg-primary text-white py-3 rounded-lg font-button-text hover:bg-secondary transition-all flex items-center justify-center gap-2"
+                    >
                       Enquire Now
                       <span className="material-symbols-outlined text-sm">arrow_forward</span>
                     </button>

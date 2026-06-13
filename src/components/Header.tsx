@@ -1,9 +1,15 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 export function Header() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleNavClick = (path: string) => {
+    navigate(path);
+    setIsMobileMenuOpen(false);
+  };
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -13,7 +19,7 @@ export function Header() {
   };
 
   const getLinkClass = (path: string) => {
-    const baseClasses = 'font-body-rt text-base font-medium transition-colors duration-300';
+    const baseClasses = 'font-body-rt text-base font-medium transition-colors duration-300 relative';
     if (isActive(path)) {
       return `${baseClasses} text-secondary border-b-2 border-secondary pb-1`;
     }
@@ -36,48 +42,58 @@ export function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-gutter">
-          <Link to="/products" className={getLinkClass('/products')}>Products</Link>
-          <Link to="/markets" className={getLinkClass('/markets')}>Markets</Link>
-          <Link to="/services" className={getLinkClass('/services')}>Services</Link>
-          <Link to="/about" className={getLinkClass('/about')}>About Us</Link>
-          <Link to="/contact" className={getLinkClass('/contact')}>Contact Us</Link>
+          <button onClick={() => handleNavClick('/products')} className={getLinkClass('/products')}>Products</button>
+          <button onClick={() => handleNavClick('/markets')} className={getLinkClass('/markets')}>Markets</button>
+          <button onClick={() => handleNavClick('/services')} className={getLinkClass('/services')}>Services</button>
+          <button onClick={() => handleNavClick('/about')} className={getLinkClass('/about')}>About Us</button>
+          <button onClick={() => handleNavClick('/contact')} className={getLinkClass('/contact')}>Contact Us</button>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
           <button className="hidden lg:block font-button-text text-button-text text-on-surface-variant hover:text-primary">
             EN/IN
           </button>
-          <button className="bg-primary text-on-primary px-6 py-3 font-button-text text-button-text hover:scale-95 duration-200 ease-in-out">
+          <Link to="/contact" className="bg-primary text-on-primary px-6 py-3 font-button-text text-button-text hover:scale-95 duration-200 ease-in-out inline-block">
             Request Quote
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-on-surface p-2 flex items-center justify-center"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
         >
-          <span className="material-symbols-outlined text-3xl">
+          <span className="material-symbols-outlined text-3xl" style={{ transition: 'transform 0.3s ease' }}>
             {isMobileMenuOpen ? 'close' : 'menu'}
           </span>
         </button>
       </nav>
 
-      {/* Mobile Menu Dropdown */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-surface shadow-xl border-b border-outline-variant/20 flex flex-col">
-          <Link to="/products" className={getMobileLinkClass('/products')} onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
-          <Link to="/markets" className={getMobileLinkClass('/markets')} onClick={() => setIsMobileMenuOpen(false)}>Markets</Link>
-          <Link to="/services" className={getMobileLinkClass('/services')} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-          <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-          <Link to="/contact" className={getMobileLinkClass('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+      {/* Mobile Menu Dropdown — animated */}
+      <div
+        className="md:hidden overflow-hidden"
+        style={{
+          maxHeight: isMobileMenuOpen ? '500px' : '0',
+          transition: 'max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1)',
+          opacity: isMobileMenuOpen ? 1 : 0,
+          transitionProperty: 'max-height, opacity',
+          transitionDuration: '0.4s, 0.3s',
+        }}
+      >
+        <div className="absolute top-20 left-0 w-full bg-surface shadow-xl border-b border-outline-variant/20 flex flex-col">
+          <button onClick={() => handleNavClick('/products')} className={getMobileLinkClass('/products')}>Products</button>
+          <button onClick={() => handleNavClick('/markets')} className={getMobileLinkClass('/markets')}>Markets</button>
+          <button onClick={() => handleNavClick('/services')} className={getMobileLinkClass('/services')}>Services</button>
+          <button onClick={() => handleNavClick('/about')} className={getMobileLinkClass('/about')}>About Us</button>
+          <button onClick={() => handleNavClick('/contact')} className={getMobileLinkClass('/contact')}>Contact Us</button>
           <div className="p-6">
-            <button className="w-full bg-primary text-on-primary px-6 py-3 font-button-text text-button-text hover:scale-95 duration-200 ease-in-out text-center">
+            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="w-full bg-primary text-on-primary px-6 py-3 font-button-text text-button-text hover:scale-95 duration-200 ease-in-out text-center block">
               Request Quote
-            </button>
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
