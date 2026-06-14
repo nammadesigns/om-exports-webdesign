@@ -17,7 +17,7 @@ export function ContactPage() {
           </p>
         </div>
       </section>
-
+      
       {/* Two-Column Content */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
